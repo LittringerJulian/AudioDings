@@ -21,6 +21,16 @@ app.whenReady().then(() => {
         { label: 'Quit', click: app.quit }
     ])
     tray.setContextMenu(contextMenu)
+    tray.on('right-click', function(event, bounds) {
+        setTimeout(function() {
+            tray.popUpContextMenu(contextMenu)
+        }, 100)
+    })
+    tray.on('click', function(event, bounds) {
+        setTimeout(function() {
+            tray.popUpContextMenu(contextMenu)
+        }, 100)
+    })
 })
 
 
