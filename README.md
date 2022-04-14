@@ -1,9 +1,9 @@
 ## Installation
-- Rename devices in Windows settings
-- Customize devices in index.js accordingly
 ```
 npm i
 ```
+- Rename devices in Windows settings
+- Customize devices in index.js accordingly
 ```
 electron-forge make
 ```
