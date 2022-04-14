@@ -27,9 +27,7 @@ app.whenReady().then(() => {
         }, 100)
     })
     tray.on('click', function(event, bounds) {
-        setTimeout(function() {
-            tray.popUpContextMenu(contextMenu)
-        }, 100)
+        tray.popUpContextMenu(contextMenu)
     })
 })
 
